@@ -1,4 +1,4 @@
-import { Pipe, PipeTransform } from '@angular/core';
+import {Pipe, PipeTransform} from '@angular/core';
 
 @Pipe({
   name: 'multi'
@@ -6,7 +6,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class MultiPipe implements PipeTransform {
 
   transform(value: any, ...args: any[]): any {
-    return null;
+    return value + value + value;
   }
 
 }
